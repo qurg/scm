@@ -128,5 +128,3 @@ dmypy.json
 .gitignore
 .idea/
 scm/__pycache__/
-templates/
-/.idea/vcs.xml
