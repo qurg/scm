@@ -21,19 +21,22 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '(8-1%#ps64b2t!errj0=-k15plp3jc()xaa!d^9gu-p+22^0wh'
 
-
 ALLOWED_HOSTS = ['*']
 
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
+    # 'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'import_export',
+    'scm.apps.ScmAdminConfig',
+    'order.apps.OrderConfig',
+    'user.apps.UserConfig',
+    'company.apps.CompanyConfig',
 ]
 
 MIDDLEWARE = [
@@ -66,7 +69,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'scm.wsgi.application'
-
 
 #
 # 开发配置文件
@@ -105,9 +107,6 @@ DATABASES = {
 # }
 
 
-
-
-
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
 
@@ -143,3 +142,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+AUTH_USER_MODEL = 'user.MyUser'
