@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'order.apps.OrderConfig',
     'user.apps.UserConfig',
     'company.apps.CompanyConfig',
+    'info.apps.InfoConfig',
 ]
 
 MIDDLEWARE = [
@@ -87,6 +88,16 @@ DATABASES = {
         'PASSWORD': '',
     }
 }
+
+# 邮件设置
+EMAIL_HOST = 'smtp.qiye.aliyun.com'
+EMAIL_PORT = '25'
+EMAIL_HOST_USER = 'rengang.qu@zhengfx.com'
+EMAIL_HOST_PASSWORD = 'Zfx@2018'
+DEFAULT_FROM_EMAIL = 'rengang.qu@zhengfx.com'
+# EMAIL_USE_TLS
+# EMAIL_USE_SSL
+
 
 #
 # 线上配置文件

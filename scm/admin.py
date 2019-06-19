@@ -40,5 +40,5 @@ def index_decorator(func):
 # registry = OrderedDict()
 # registry.update(admin.site._registry)
 # admin.site._registry = registry
-admin.site.index = index_decorator(admin.site.index)
-admin.site.app_index = index_decorator(admin.site.app_index)
+admin.sites.AdminSite.index = index_decorator(admin.sites.AdminSite.index)
+admin.sites.AdminSite.app_index = index_decorator(admin.sites.AdminSite.app_index)
