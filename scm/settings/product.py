@@ -10,7 +10,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'scm',
-        'HOST': '127.0.0.1',
+        'HOST': '47.105.130.115',
         'PORT': '3306',
         'USER': 'root',
         'PASSWORD': 'wxs@2019',
