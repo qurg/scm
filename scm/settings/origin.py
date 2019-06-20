@@ -55,7 +55,7 @@ ROOT_URLCONF = 'scm.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
+        'DIRS': [os.path.join(BASE_DIR, '../../templates')]
         ,
         'APP_DIRS': True,
         'OPTIONS': {
@@ -70,24 +70,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'scm.wsgi.application'
-
-#
-# 开发配置文件
-#
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-# 开发环境数据库
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'scm',
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
-        'USER': 'root',
-        'PASSWORD': '',
-    }
-}
 
 # 邮件设置
 EMAIL_HOST = 'smtp.qiye.aliyun.com'
