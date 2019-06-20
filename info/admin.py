@@ -7,7 +7,7 @@ from info.models import AirportCode, Exchange, Charge
 @admin.register(AirportCode)
 class AirportCodeAdmin(admin.ModelAdmin):
     list_display = ('airport_code', 'country_code', 'city_code', 'airport_en_name', 'airport_cn_name')
-    search_fields = ['airport_code__exact', 'country_code__exact', 'city_code__exact', 'airport_en_name', 'airport_cn_name']
+    search_fields = ['airport_code__exact', 'country_code__exact', 'city_code__exact', 'airport_en_name__exact', 'airport_cn_name']
 
 
 
