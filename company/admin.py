@@ -4,7 +4,7 @@ from django.core.mail import send_mail
 # Register your models here.
 from django.contrib.admin import ModelAdmin
 
-from base.admin import BaseAdmin
+from common.admin import BaseAdmin
 from company.models import Customer, Supplier, Airline
 
 

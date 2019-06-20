@@ -5,7 +5,7 @@ from django.contrib import admin
 # Register your models here.
 from django.db.models import Sum
 
-from base.admin import BaseAdmin
+from common.admin import BaseAdmin
 from info.models import Exchange
 from order.adminForms import CustomerOrderAdminForm
 from order.models import MasterOrder, HouseOrder, CustomerOrder, CustomerOrderChargeOut, CustomerOrderChargeIn

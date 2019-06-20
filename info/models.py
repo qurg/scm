@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-from base.models import BaseEntity
+from common.models import BaseEntity
 
 
 class AirportCode(BaseEntity):

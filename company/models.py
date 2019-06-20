@@ -1,5 +1,5 @@
 from django.db import models
-from base.models import BaseEntity
+from common.models import BaseEntity
 
 
 # Create your models here.
